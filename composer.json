@@ -1,0 +1,17 @@
+{
+    "name": "devbipu/wp-plugin-boilerplate",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Devbipu\\WpPluginBoilerplate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Biplob Shaha",
+            "email": "devbipu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

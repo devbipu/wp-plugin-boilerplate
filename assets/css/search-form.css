@@ -1,0 +1,78 @@
+.rv-search-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rv-search-form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2em;
+}
+
+.rv-search-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.rv-search-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  grid-column: 1 / -1;
+  margin-top: 10px;
+}
+
+.rv-search-button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .rv-search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .rv-search-form-container {
+    padding: 20px;
+  }
+
+  .rv-search-form-container h2 {
+    font-size: 1.5em;
+  }
+}
